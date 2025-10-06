@@ -1,0 +1,16 @@
+# dependencias y builds
+node_modules/
+dist/
+build/
+.vite/
+
+# variables de entorno y claves
+.env
+.env.*
+*.pem
+*.key
+aws_credentials
+
+# otros
+.DS_Store
+coverage/
