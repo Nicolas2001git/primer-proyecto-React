@@ -1,8 +1,11 @@
 /* ==============================
    BASE & THEME
 ============================== */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
 :root {
   --bg: #f9f6f1;
   --ink: #2c2c2c;
@@ -12,14 +15,14 @@
   --paper: #fffdf7;
   --ml-yellow: #ffe600;
 }
-
-html, body { height: 100%; }
+html, body { 
+  height: 100%; 
+}
 body {
   font-family: 'EB Garamond', serif;
   color: var(--ink);
   background-color: var(--bg);
 }
-
 h1, h2, h3, .titulo-seccion, .titulo-sitio {
   font-family: 'Cinzel Decorative', serif;
   font-weight: 700;
@@ -27,9 +30,8 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   color: var(--title);
   text-shadow: 1px 1px 2px #d4c4a8;
 }
-
 /* ==============================
-   APP LAYOUT
+   APP
 ============================== */
 .app {
   font-family: Georgia, "Times New Roman", serif;
@@ -39,9 +41,9 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   padding: 16px;
   background: linear-gradient(#f9f5e7, #f3ead7);
 }
-
-.contenido { margin-top: 16px; }
-
+.contenido { 
+  margin-top: 16px; 
+}
 .encabezado {
   display: flex;
   justify-content: space-between;
@@ -49,9 +51,7 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   gap: 8px;
   margin-bottom: 12px;
 }
-
 .bienvenida { margin: 0; font-size: 20px; }
-
 /* Botones generales */
 .boton-entrar,
 .boton-salir,
@@ -71,7 +71,6 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   display: inline-block;
   transition: transform .2s, background .2s, opacity .2s;
 }
-
 .boton-entrar:hover,
 .boton-salir:hover,
 .grupo-botones button:hover,
@@ -81,7 +80,6 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   transform: scale(1.05);
   background: linear-gradient(180deg, #d1a965, #a07536);
 }
-
 .boton-entrar:disabled,
 .boton-salir:disabled,
 .grupo-botones button:disabled,
@@ -103,7 +101,10 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   border-bottom: 1px solid #eee;
 }
 
-.titulo-sitio { margin: 0; font-size: 18px; }
+.titulo-sitio { 
+  margin: 0; 
+  font-size: 18px; 
+}
 
 .lista-menu {
   list-style: none;
@@ -120,8 +121,13 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   cursor: pointer;
   transition: color .2s;
 }
-.item-menu a { color: inherit; text-decoration: none; }
-.item-menu:hover { color: var(--accent); }
+.item-menu a { 
+  color: inherit; 
+  text-decoration: none; 
+}
+.item-menu:hover { 
+  color: var(--accent); 
+}
 
 /* Select de categorías (si lo usás) */
 .select-categorias {
@@ -136,19 +142,18 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   box-shadow: 0 0 0 3px rgba(176,141,87,.18);
   border-color: var(--accent);
 }
-
 /* ==============================
    LOGIN
 ============================== */
-.pantalla-login { padding: 24px; }
-
+.pantalla-login { 
+  padding: 24px; 
+}
 .contenedor-login {
   display: grid;
   max-width: 420px;
   margin: 0 auto;
   gap: 8px;
 }
-
 .entrada-nombre {
   font-family: 'EB Garamond', serif;
   background-color: var(--paper);
@@ -156,7 +161,6 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   padding: 8px;
   border-radius: 6px;
 }
-
 /* ==============================
    LISTADO DE DESTINOS
 ============================== */
@@ -165,7 +169,6 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   border-radius: 6px;
   padding: 12px;
 }
-
 .titulo-seccion {
   margin: 0 0 8px;
   color: #4a3926;
@@ -205,33 +208,32 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0,0,0,.10);
 }
-
 .card-img {
   width: 100%;
-  height: 200px;       /* alto uniforme */
-  object-fit: cover;   /* recorta sin deformar */
-  border-radius: 0;    /* el radio lo maneja la card */
+  height: 200px;       
+  object-fit: cover;   
+  border-radius: 0;    
   border: none;
 }
-
 .card-body {
   display: grid;
   gap: 8px;
   padding: 12px;
 }
-
-.card-title { font-size: 1.1rem; margin: 0; }
-
+.card-title { 
+  font-size: 1.1rem; 
+  margin: 0; }
 .card-desc {
   font-size: .95rem;
   color: #5b4e3e;
-  min-height: 38px;    /* evita saltos entre cards */
+  min-height: 38px;    
 }
-
 .card-price { font-weight: 700; color: var(--accent-dark); }
 
-/* Botón de “Elegir guía y reservar” */
-.btn-detalle { justify-self: start; }
+
+.btn-detalle { 
+  justify-self: start; 
+}
 
 /* ==============================
    DETALLE DE DESTINO
@@ -242,7 +244,6 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   gap: 16px;
   align-items: start;
 }
-
 .detalle-imagen {
   width: 100%;
   height: 220px;
@@ -251,10 +252,14 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   box-shadow: 0 4px 10px rgba(0,0,0,.08);
   border: 1px solid #e8dcc2;
 }
+.detalle-info { 
+  display: grid; 
+  gap: 10px; }
 
-.detalle-info { display: grid; gap: 10px; }
-
-.detalle-botones { display: flex; gap: 10px; margin-top: 6px; }
+.detalle-botones { 
+  display: flex; 
+  gap: 10px; 
+  margin-top: 6px; }
 
 /* ==============================
    CART WIDGET
@@ -267,15 +272,19 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   padding: 12px 16px;
   min-width: 220px;
 }
-
-.cart-titulo { margin-bottom: 8px; font-weight: bold; }
-
-.cart-vacio { font-size: 0.9rem; color: #555; }
-
-.cart-lista { list-style: none; padding: 0; margin: 0; font-size: 0.9rem; }
-
+.cart-titulo { 
+  margin-bottom: 8px; 
+  font-weight: bold; }
+.cart-vacio { 
+  font-size: 0.9rem; 
+  color: #555; }
+.cart-lista { 
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  font-size: 0.9rem; }
 .cart-item {
-  display: flex;                 /* unificado: flex para alinear el botón ✕ */
+  display: flex;                 
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ddd;
@@ -283,9 +292,19 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   gap: 8px;
 }
 
-.cart-destino { font-weight: 700; }
-.cart-guia   { color: #6a5a45; font-size: .9rem; display: inline-block; }
-.cart-precio { color: var(--accent-dark); font-weight: 700; display: inline-block; }
+.cart-destino { 
+  font-weight: 700; 
+}
+.cart-guia   { 
+  display: inline-block;
+  color: #6a5a45; 
+  font-size: .9rem; 
+}
+.cart-precio { 
+  display: inline-block;
+  color: var(--accent-dark); 
+  font-weight: 700;  
+}
 
 .cart-total {
   margin-top: 10px;
@@ -293,7 +312,6 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   text-align: right;
   color: #333;
 }
-
 /* Botón eliminar (✕) */
 .boton-eliminar {
   background: none;
@@ -303,17 +321,32 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   cursor: pointer;
   transition: transform 0.2s ease;
 }
-.boton-eliminar:hover { transform: scale(1.2); }
+.boton-eliminar:hover { 
+  transform: scale(1.2); 
+}
 
 /* ==============================
    PÁGINA 404
 ============================== */
-.pagina-error { text-align: center; margin-top: 80px; padding: 20px; }
+.pagina-error { 
+  text-align: center; 
+  margin-top: 80px; 
+  padding: 20px; }
 
-.error-titulo   { font-size: 3rem; margin-bottom: 10px; color: var(--title); }
-.error-subtitulo{ margin-bottom: 20px; font-size: 1.5rem; color: var(--accent-dark); }
-.error-texto    { margin-bottom: 20px; font-size: 1rem; }
-
+.error-titulo   { 
+  font-size: 3rem; 
+  margin-bottom: 10px; 
+  color: var(--title); 
+}
+.error-subtitulo{ 
+  margin-bottom: 20px; 
+  font-size: 1.5rem; 
+  color: var(--accent-dark); 
+}
+.error-texto { 
+  margin-bottom: 20px; 
+  font-size: 1rem; 
+}
 .link-categoria {
   display: inline-block;
   margin-right: 8px;
@@ -325,13 +358,10 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   text-decoration: none;
   transition: background .2s, transform .2s;
 }
-
 .link-categoria:hover {
   background: #f6efe0;
   transform: translateY(-1px);
 }
-
-/* Reusa btn-volver de botones generales */
 
 /* ==============================
    RESPONSIVE
@@ -340,7 +370,6 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   .detalle-item { grid-template-columns: 1fr; }
   .detalle-imagen { height: 240px; }
 }
-
 @media (max-width: 600px) {
   .encabezado,
   .barra-navegacion {
@@ -348,7 +377,13 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
     align-items: flex-start;
     gap: 8px;
   }
-  .grid-items { gap: 12px; }
-  .card-img { height: 180px; }
-  .detalle-imagen { height: 200px; }
+  .grid-items { 
+    gap: 12px; 
+  }
+  .card-img { 
+    height: 180px; 
+  }
+  .detalle-imagen { 
+    height: 200px; 
+  }
 }
