@@ -16,4 +16,4 @@ function Contacto() {
     </div>
   );
 }
-export default Contacto;
+export default Contacto; 
