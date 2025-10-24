@@ -46,9 +46,7 @@ const eliminarReserva = (index) => {
   <div className="app">
     <header className="encabezado">
       <h1 className="bienvenida">Bienvenido, {name}, a la Tierra Media</h1>
-      <button
-        className="boton-salir"
-        onClick={() => {
+      <button className="boton-salir" onClick={() => {
           setLogeado(false);
           setName("");
         }}
@@ -56,44 +54,12 @@ const eliminarReserva = (index) => {
         Cerrar sesión
       </button>
     </header>
-    <NavBar
-      count={count}
-      reservas={reservas}
-      eliminarReserva={eliminarReserva}
-    />
+    <NavBar count={count} reservas={reservas} eliminarReserva={eliminarReserva}/>
     <main className="contenido">
       <Routes>
-        <Route
-          path="/"
-          element={
-            <ItemListaContainer
-              setCount={setCount}
-              count={count}
-              reservas={reservas}
-              setReservas={setReservas}
-            />
-          }
-        />
-        <Route
-          path="/categoria/:categoriaId"
-          element={
-            <ItemListaContainer
-              setCount={setCount}
-              count={count}
-              reservas={reservas}
-              setReservas={setReservas}
-            />
-          }
-        />
-        <Route
-          path="/item/:id"
-          element={
-            <ItemDetailContainer
-              onAddToCart={agregarAlCarrito}
-              count={count}
-            />
-          }
-        />
+        <Route path="/" element={ <ItemListaContainer setCount={setCount} count={count} reservas={reservas} setReservas={setReservas}/>}/>
+        <Route path="/categoria/:categoriaId" element={<ItemListaContainer setCount={setCount} count={count} reservas={reservas} setReservas={setReservas}/>}/>
+        <Route path="/item/:id" element={<ItemDetailContainer onAddToCart={agregarAlCarrito} count={count}/>}/>
         <Route path="/expediciones" element={<Expediciones />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="*" element={<NotFound />} />

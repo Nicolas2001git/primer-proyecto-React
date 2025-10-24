@@ -15,11 +15,7 @@ function NavBar({ count, reservas, eliminarReserva }) {
           <Link to="/contacto">Contacto</Link>
         </li>
       </ul>
-      <CartWidget
-        count={count}
-        reservas={reservas}
-        eliminarReserva={eliminarReserva}
-      />
+      <CartWidget count={count} reservas={reservas} eliminarReserva={eliminarReserva}/>
     </nav>
   );
 }

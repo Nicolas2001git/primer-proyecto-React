@@ -1,6 +1,4 @@
-/* ==============================
-   BASE & THEME
-============================== */
+/*  BASE & THEME */
 * { 
   margin: 0; 
   padding: 0; 
@@ -30,9 +28,7 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   color: var(--title);
   text-shadow: 1px 1px 2px #d4c4a8;
 }
-/* ==============================
-   APP
-============================== */
+/* APP */
 .app {
   font-family: Georgia, "Times New Roman", serif;
   color: #2e2a24;
@@ -52,7 +48,8 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   margin-bottom: 12px;
 }
 .bienvenida { margin: 0; font-size: 20px; }
-/* Botones generales */
+
+/* Botones */
 .boton-entrar,
 .boton-salir,
 .grupo-botones button,
@@ -90,9 +87,7 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   cursor: not-allowed;
 }
 
-/* ==============================
-   NAVBAR
-============================== */
+/*  NAVBAR */
 .barra-navegacion {
   display: flex;
   justify-content: space-between;
@@ -100,12 +95,10 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   padding: 8px 0;
   border-bottom: 1px solid #eee;
 }
-
 .titulo-sitio { 
   margin: 0; 
   font-size: 18px; 
 }
-
 .lista-menu {
   list-style: none;
   display: flex;
@@ -113,7 +106,6 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   padding: 0;
   margin: 0;
 }
-
 .item-menu {
   font-family: 'Cinzel Decorative', serif;
   font-weight: 700;
@@ -128,23 +120,7 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
 .item-menu:hover { 
   color: var(--accent); 
 }
-
-/* Select de categorías (si lo usás) */
-.select-categorias {
-  font-family: 'EB Garamond', serif;
-  border: 1px solid #c9b392;
-  background-color: #fffdf6;
-  padding: 6px 10px;
-  border-radius: 8px;
-  outline: none;
-}
-.select-categorias:focus {
-  box-shadow: 0 0 0 3px rgba(176,141,87,.18);
-  border-color: var(--accent);
-}
-/* ==============================
-   LOGIN
-============================== */
+/*  LOGIN */
 .pantalla-login { 
   padding: 24px; 
 }
@@ -161,9 +137,7 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   padding: 8px;
   border-radius: 6px;
 }
-/* ==============================
-   LISTADO DE DESTINOS
-============================== */
+/*  LISTADO DE DESTINOS */
 .seccion-reservas {
   border: 1px solid #eee;
   border-radius: 6px;
@@ -184,8 +158,7 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   margin-top: 6px;
   background: linear-gradient(90deg, transparent, var(--accent), transparent);
 }
-
-/* Grid de cards */
+/* Grid Cards*/
 .grid-items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -193,7 +166,7 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   margin-top: 12px;
 }
 
-/* Card de destino */
+/* Card Destino*/
 .card-item {
   background: var(--paper);
   border: 1px solid #e7dec8;
@@ -235,9 +208,7 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   justify-self: start; 
 }
 
-/* ==============================
-   DETALLE DE DESTINO
-============================== */
+/*  DETALLE DE DESTINO */
 .detalle-item {
   display: grid;
   grid-template-columns: 320px 1fr;
@@ -261,9 +232,7 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   gap: 10px; 
   margin-top: 6px; }
 
-/* ==============================
-   CART WIDGET
-============================== */
+/* CART WIDGET */
 .cart-widget {
   background: #fffef9;
   border: 1px solid #e8dcc2;
@@ -291,7 +260,6 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   padding: 8px 0;
   gap: 8px;
 }
-
 .cart-destino { 
   font-weight: 700; 
 }
@@ -305,7 +273,6 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   color: var(--accent-dark); 
   font-weight: 700;  
 }
-
 .cart-total {
   margin-top: 10px;
   font-weight: bold;
@@ -325,9 +292,7 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   transform: scale(1.2); 
 }
 
-/* ==============================
-   PÁGINA 404
-============================== */
+/* 404 */
 .pagina-error { 
   text-align: center; 
   margin-top: 80px; 
@@ -362,10 +327,7 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   background: #f6efe0;
   transform: translateY(-1px);
 }
-
-/* ==============================
-   RESPONSIVE
-============================== */
+/* RESPONSIVE */
 @media (max-width: 840px) {
   .detalle-item { grid-template-columns: 1fr; }
   .detalle-imagen { height: 240px; }

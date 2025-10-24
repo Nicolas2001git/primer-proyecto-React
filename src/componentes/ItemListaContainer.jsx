@@ -28,11 +28,7 @@ function ItemListaContainer() {
       <nav>
         <p>Categorías:</p>
         {["mordor", "rivendel", "la-comarca", "rohan", "moria"].map((categoria) => (
-          <Link
-            key={categoria}
-            to={`/categoria/${categoria}`}
-            className="link-categoria"
-          >
+          <Link key={categoria} to={`/categoria/${categoria}`}className="link-categoria">
             {categoria}
           </Link>
         ))}

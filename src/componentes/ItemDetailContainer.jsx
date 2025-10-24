@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import {obtenerLocalizacionPorId,obtenerGuias,obtenerPrecioConGuia,} from "./services";
 function ItemDetailContainer({ onAddToCart }) {
   const { id } = useParams();
-  const navigate = useNavigate();
+  const navegar = useNavigate();
   const [item, setItem] = useState(null);
   const [cargando, setCargando] = useState(true);
   const [error, setError] = useState("");
@@ -55,7 +55,7 @@ function ItemDetailContainer({ onAddToCart }) {
           {guiaId && precioConGuia ? `$${precioConGuia}` : "—"}
         </p>
         <div className="detalle-botones">
-          <button onClick={() => navigate(-1)}>← Volver</button>
+          <button onClick={() => navegar(-1)}>← Volver</button>
           <button
             onClick={() =>
               onAddToCart(item, {
@@ -65,8 +65,7 @@ function ItemDetailContainer({ onAddToCart }) {
               })
             }
             disabled={!guiaId}
-            title={!guiaId ? "Elegí una guía para continuar" : ""}
-          >
+            title={!guiaId ? "Elegí una guía para continuar" : ""}>
             Agregar al carrito
           </button>
         </div>

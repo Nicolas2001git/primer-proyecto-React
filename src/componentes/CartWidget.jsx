@@ -7,14 +7,14 @@ function CartWidget({ count, reservas, eliminarReserva }) {
       ) : (
         <>
           <ul className="cart-lista">
-            {reservas.map((r, index) => (
+            {reservas.map((reserva, index) => (
               <li key={index} className="cart-item">
                 <div>
-                  <span className="cart-destino">{r.destino}</span>
+                  <span className="cart-destino">{reserva.destino}</span>
                   <br />
-                  <span className="cart-guia">Guía: {r.guia}</span>
+                  <span className="cart-guia">Guía: {reserva.guia}</span>
                   <br />
-                  <span className="cart-precio">${r.precio}</span>
+                  <span className="cart-precio">${reserva.precio}</span>
                 </div>
                 <button className="boton-eliminar" onClick={() => eliminarReserva(index)} title="Eliminar destino">
                   ✕
