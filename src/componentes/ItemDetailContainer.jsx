@@ -75,3 +75,4 @@ function ItemDetailContainer({ onAddToCart }) {
   );
 }
 export default ItemDetailContainer;
+ 

@@ -286,7 +286,6 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
 .boton-eliminar:hover { 
   transform: scale(1.2); 
 }
-
 /* 404 */
 .pagina-error { 
   text-align: center; 

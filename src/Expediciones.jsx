@@ -9,4 +9,4 @@ function Expediciones() {
     </div>
   );
 }
-export default Expediciones;
+export default Expediciones; 

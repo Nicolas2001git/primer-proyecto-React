@@ -29,5 +29,5 @@ function CartWidget({ count, reservas, eliminarReserva }) {
       )}
     </div>
   );
-}
+} 
 export default CartWidget;

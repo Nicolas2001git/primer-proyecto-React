@@ -2,7 +2,6 @@ import PersonajeCard from "./componentes/PersonajeCard";
 import frodo from "./assets/frodo.jpg";
 import gollum from "./assets/gollum.jpg";
 import gandalf from "./assets/gandalf.jpg";
-
 function Contacto() {
   return (
     <div className="pagina">
@@ -17,5 +16,4 @@ function Contacto() {
     </div>
   );
 }
-
 export default Contacto;

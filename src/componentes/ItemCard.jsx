@@ -15,3 +15,4 @@ const ItemCard = ({ id, titulo, imagen, precio, descripcion }) => {
   );
 };
 export default ItemCard;
+ 
