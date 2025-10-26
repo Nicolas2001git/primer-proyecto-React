@@ -48,7 +48,6 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   margin-bottom: 12px;
 }
 .bienvenida { margin: 0; font-size: 20px; }
-
 /* Botones */
 .boton-entrar,
 .boton-salir,
@@ -86,7 +85,6 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   opacity: .6;
   cursor: not-allowed;
 }
-
 /*  NAVBAR */
 .barra-navegacion {
   display: flex;
@@ -165,7 +163,6 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   gap: 16px;
   margin-top: 12px;
 }
-
 /* Card Destino*/
 .card-item {
   background: var(--paper);
@@ -201,13 +198,13 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
   color: #5b4e3e;
   min-height: 38px;    
 }
-.card-price { font-weight: 700; color: var(--accent-dark); }
-
-
+.card-price { 
+  font-weight: 700; 
+  color: var(--accent-dark); 
+}
 .btn-detalle { 
   justify-self: start; 
 }
-
 /*  DETALLE DE DESTINO */
 .detalle-item {
   display: grid;
@@ -217,7 +214,7 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
 }
 .detalle-imagen {
   width: 100%;
-  height: 220px;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,.08);
@@ -226,12 +223,10 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
 .detalle-info { 
   display: grid; 
   gap: 10px; }
-
 .detalle-botones { 
   display: flex; 
   gap: 10px; 
   margin-top: 6px; }
-
 /* CART WIDGET */
 .cart-widget {
   background: #fffef9;
@@ -326,6 +321,13 @@ h1, h2, h3, .titulo-seccion, .titulo-sitio {
 .link-categoria:hover {
   background: #f6efe0;
   transform: translateY(-1px);
+}
+/* RATING */
+.estrella {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
 }
 /* RESPONSIVE */
 @media (max-width: 840px) {

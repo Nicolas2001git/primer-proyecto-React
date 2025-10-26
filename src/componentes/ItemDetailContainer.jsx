@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import {obtenerLocalizacionPorId,obtenerGuias,obtenerPrecioConGuia,} from "./services";
+import { Image} from "antd";
 function ItemDetailContainer({ onAddToCart }) {
   const { id } = useParams();
   const navegar = useNavigate();
@@ -34,7 +35,7 @@ function ItemDetailContainer({ onAddToCart }) {
   const guiaSeleccionada = guias.find((guia) => String(guia.id) === String(guiaId));
   return (
     <section className="detalle-item">
-      <img src={item.imagen} alt={item.titulo} className="detalle-imagen" />
+      <Image src={item.imagen} alt={item.titulo} width={320} className="detalle-imagen" style={{ borderRadius: "12px", cursor: "zoom-in" }} preview={{ mask: "Ampliar" }}/>
       <div className="detalle-info">
         <h2>{item.titulo}</h2>
         <p>{item.descripcion}</p>
