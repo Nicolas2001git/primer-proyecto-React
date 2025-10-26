@@ -1,6 +1,6 @@
 Este es un proyecto en desarrollo creado con React, donde estoy trabajando con componentes, rutas, manejo de estado y un toque de diseño personalizado. La idea principal es simular una web donde los usuarios puedan reservar expediciones a diferentes lugares de la Tierra Media (inspirado en El Señor de los Anillos).
 
-📌 ¿Qué se puede hacer en la aplicación?
+¿Qué se puede hacer en la aplicación?
 
 Iniciar sesión con un nombre para personalizar la experiencia.
 
