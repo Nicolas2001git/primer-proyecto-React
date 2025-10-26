@@ -12,7 +12,7 @@ function Contacto() {
       <div className="seccion-personajes-contacto">
         <PersonajeCard imagen={frodo} titulo="Frodo Bolsón" descripcion="El portador del Anillo." puntuacion={4}/>
         <PersonajeCard imagen={gollum} titulo="Gollum" descripcion="Una criatura dividida por el poder del Anillo." puntuacion={3}/>
-        <PersonajeCard imagen={gandalf} titulo="Gandalf el Gris" descripcion="El sabio mago guía de la Comunidad."puntuacion={5}/>
+        <PersonajeCard imagen={gandalf} titulo="Gandalf el Gris" descripcion="El sabio mago guía de la Comunidad." puntuacion={5}/>
       </div>
     </div>
   );
