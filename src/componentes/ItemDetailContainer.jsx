@@ -21,7 +21,7 @@ function ItemDetailContainer() {
     setGuiaId("");
     setPrecioConGuia(null);
     setQuantity(1);
-    setAgregado(false);
+    setAgregado(false); 
     obtenerLocalizacionPorId(id)
       .then((data) => setItem(data))
       .catch(() => setError("No se pudo cargar el detalle."))

@@ -19,7 +19,7 @@ function ItemDetail({ item, guias, guiaId, onChangeGuia, precioConGuia, onBack, 
               </option>
             ))}
           </select>
-        </label>
+        </label> 
         <p className="detalle-precio">
           <strong>Precio con guía:</strong>{" "}
           {guiaId && precioConGuia ? `$${precioConGuia}` : "—"}

@@ -20,7 +20,7 @@ function CartWidget() {
                   <p className="cart-precio"> ${reserva.precioUnitario} x {reserva.cantidad} </p>
                 </div>
                 <button className="boton-eliminar" onClick={() => removeItem(reserva.idReserve)} title="Eliminar destino">
-                  ✕
+                  ✕ 
                 </button>
               </li>
             ))}

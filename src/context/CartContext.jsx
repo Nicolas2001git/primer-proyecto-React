@@ -14,7 +14,7 @@ export function CartProvider({ children }) {
         cantidad: quantity, 
       },
     ]);
-  };
+  }; 
   const removeItem = (idReserve) => {
     setItems((prev) => prev.filter((item) => item.idReserve !== idReserve));
   };

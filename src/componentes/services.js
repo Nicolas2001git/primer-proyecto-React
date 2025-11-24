@@ -23,14 +23,14 @@ export async function obtenerLocalizaciones(categoriaId) {
   let consulta = ref;
   if (categoriaId) {
     consulta = query(ref, where("categoria", "==", categoriaId));
-  }
-  const snapshot = await getDocs(consulta);
-  return snapshot.docs.map((docSnap) => {
-    const data = docSnap.data();
+  } 
+  const responseLoc = await getDocs(consulta);
+  return responseLoc.docs.map((Loc) => {
+    const data = Loc.data();
     const claveImagen = data.imagenRef || data.categoria;
     const imagen = imagenesRef[claveImagen] || comarca;
     return {
-      id: docSnap.id,
+      id: Loc.id,
       ...data,
       imagen,
     };

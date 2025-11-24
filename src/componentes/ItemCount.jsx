@@ -14,3 +14,4 @@ function ItemCount({ quantity, onIncrease, onDecrease }) {
   );
 }
 export default ItemCount;
+ 

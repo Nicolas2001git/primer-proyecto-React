@@ -11,3 +11,4 @@ const PersonajeCard = ({ imagen, titulo, descripcion, puntuacion }) => {
   );
 };
 export default PersonajeCard;
+ 

@@ -24,5 +24,5 @@ function NavBar() {
       <CartWidget />
     </nav>
   );
-}
+} 
 export default NavBar;

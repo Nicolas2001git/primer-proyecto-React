@@ -19,7 +19,7 @@ function Home() {
     setLogeado(true);
   };
   const handleLogout = () => {
-    setLogeado(false);
+    setLogeado(false); 
     setName("");
   };
   if (!logeado) {
