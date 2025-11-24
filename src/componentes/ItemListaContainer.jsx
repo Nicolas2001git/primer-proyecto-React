@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { obtenerLocalizaciones } from "./services";
-import ItemCard from "./ItemCard"; 
+import ItemList from "./ItemList";
 function ItemListaContainer() {
   const { categoriaId } = useParams();
   const [items, setItems] = useState([]);
@@ -19,22 +19,25 @@ function ItemListaContainer() {
   if (error) return <p style={{ color: "crimson" }}>{error}</p>;
   return (
     <section className="seccion-reservas">
-      <h3>{categoriaId ? `Categoría: ${categoriaId}` : "Catálogo completo"}</h3>
-      <div className="grid-items">
-        {items.map((item) => (
-          <ItemCard key={item.id} {...item} />
-        ))}
-      </div>
+      <h3 className="titulo-seccion">
+        {categoriaId ? `Categoría: ${categoriaId}` : "Catálogo completo"}
+      </h3>
+      <ItemList items={items} />
       <nav>
         <p>Categorías:</p>
-        {["mordor", "rivendel", "la-comarca", "rohan", "moria"].map((categoria) => (
-          <Link key={categoria} to={`/categoria/${categoria}`}className="link-categoria">
-            {categoria}
-          </Link>
-        ))}
+        {["mordor", "rivendel", "la-comarca", "rohan", "moria"].map(
+          (categoria) => (
+            <Link
+              key={categoria}
+              to={`/categoria/${categoria}`}
+              className="link-categoria"
+            >
+              {categoria}
+            </Link>
+          )
+        )}
       </nav>
     </section>
   );
 }
 export default ItemListaContainer;
- 
