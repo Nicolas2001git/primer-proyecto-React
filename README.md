@@ -1,21 +1,66 @@
-Este es un proyecto en desarrollo creado con React, donde estoy trabajando con componentes, rutas, manejo de estado y un toque de diseño personalizado. La idea principal es simular una web donde los usuarios puedan reservar expediciones a diferentes lugares de la Tierra Media (inspirado en El Señor de los Anillos).
+# 🌋 Proyecto React – Expediciones en Tierra Media  
+Una Single Page Application (SPA) desarrollada con **React + Vite** que simula un e-commerce de reservas de destinos épicos de la Tierra Media.  
+Permite explorar lugares, ver detalles, seleccionar guías, agregar al carrito y finalizar la compra guardando una orden real en **Firebase Firestore**.
+Este proyecto fue realizado como parte de una entrega final, cumpliendo con buenas prácticas, arquitectura modular, contexto global, rutas protegidas y un diseño personalizado basado en la estética medieval de la saga.
 
-¿Qué se puede hacer en la aplicación?
+## 🧙‍♂️ **Características principales**
+### Inicio personalizado
+El usuario ingresa un nombre al iniciar, que queda almacenado durante toda la sesión.
+### Catálogo dinámico (Firestore)
+- Los destinos (Mordor, Rivendel, Rohan, Moria, etc.) se leen desde **Cloud Firestore**.
+- Cada destino contiene título, descripción, precio, imagen e imagenRef para el mapeo local.
+### Detalle de destino
+- Vista individual cargada por ID vía React Router.
+- El usuario debe elegir una **guía obligatoria** antes de agregar al carrito.
+- Precio se actualiza dinámicamente según guía seleccionada.
+- Se usa un **contador medieval estilizado** para la cantidad.
+### Carrito (Context API)
+- Se implementó un **CartContext** global.
+- Permite agregar 1 destino por reserva y evitar duplicados.
+- Cálculo automático de subtotal y total.
+- Eliminación individual y limpieza completa.
+### Checkout
+- Formulario con validación de nombre, email y comentarios opcionales.
+- Resumen del pedido.
+- Al confirmar, se **genera un documento en la colección `orders` de Firestore`.**
+- Mensajes de éxito y error con **react-hot-toast**.
+- Pantalla final con ID de orden generada.
+### Sección Contacto (UI moderna)
+Incluye 3 personajes:
+- Frodo  
+- Gollum  
+- Gandalf  
+Cada uno con foto, descripción y puntuación en estrellas usando **Ant Design**.
+### Estilo visual personalizado
+Se trabajó fuertemente la UI:
+- Tipografías medievales (**Cinzel**, **EB Garamond**)  
+- Paleta cálida estilo pergamino  
+- Botones estilizados con degradados  
+- Cards con sombras suaves  
+- Caja tipo pergamino para el checkout  
+- Diseño responsive para tablets y celulares
+### Navegación SPA
+- React Router manteniendo la app sin recargas.
+- 404 personalizada.
+- Rutas:  
+/
+/categoria/:categoriaId
+/destino/:id
+/carrito
+/checkout
+/contacto
 
-Iniciar sesión con un nombre para personalizar la experiencia.
+## 🛠️ **Tecnologías utilizadas**
 
-Ver una lista de destinos épicos como Mordor, Rivendel, Moria, entre otros.
+### Frontend
+- **React**
+- **Vite**
+- **React Router DOM**
+- **Context API**
+- **Ant Design**
+- **React Hot Toast**
 
-Entrar al detalle de cada destino, donde el usuario debe elegir un guía antes de añadir el viaje al carrito.
-
-El carrito muestra dinámicamente cuántas reservas se realizaron.
-
-Sección de Contacto, donde aparecen tres personajes conocidos con una puntuación en estrellas, implementada con Ant Design.
-
-🛠️ Tecnologías utilizadas
-
-React + React Router para la estructura y navegación
-
-Ant Design para componentes visuales con mejor estilo
-
-CSS personalizado para darle una ambientación medieval y temática
+### Backend (BaaS)
+- **Firebase**
+- **Cloud Firestore**
+- **Firebase SDK v9 modular**
